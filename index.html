@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS Paint</title>
+    <link rel="icon" type="image/png" href="painter.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tool-bar">
+        <div class="current-tool">
+            <span id="current-tool" title="Active Tool">Brush</span>
+        </div>
+        <div class="brush tool">
+            <i class="fas fa-brush" id="brush" title="Brush"></i>
+            <input type="color" id="brush-color" class="colorSel" name="color2" value="#ff0000">
+            <span class="size" id="brush-size" title="Brush Size">10</span>
+            <input type="range" min="1" max="50" value="10" class="slider" id="brush-slider">
+        </div>
+        <div class="background tool">
+            <i class="fas fa-fill-drip" title="Background Color"></i>
+            <input type="color" id="background-color" class="colorSel" name="color" value="#ff0000">
+        </div>
+        <div class="tool">
+            <i class="fas fa-eraser" id="eraser" title="Eraser"></i>
+        </div>
+        <div class="tool">
+            <i class="fas fa-undo-alt" id="clear" title="Clear"></i>
+        </div>
+        <div class="tool">
+            <i class="fas fa-download" id="saveLocalstorage" title="Save Local Storage"></i>
+        </div>
+        <div class="tool">
+            <i class="fas fa-upload" id="loadFromLocal" title="Load Local Storage"></i>
+        </div>
+        <div class="tool">
+            <i class="fas fa-trash-alt" id="cleanStorage" title="Clear Local Storage"></i>
+        </div>
+        <div class="tool">
+            <img class="fas" src="rect.png" alt="rectangle" title="draw rectangle" id="rectangle">
+        </div>
+        <div class="tool">
+            <i class="fas fa-circle" id="circle"></i>
+        </div>
+        <div class="tool">
+            <img class="fas" src="ellipse.png" alt="ellipse" title="draw ellipse" id="ellipse">
+        </div>
+        <div class="tool">
+            <a id="download">
+                <i class="far fa-save" title="Save Image File"></i>
+            </a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
